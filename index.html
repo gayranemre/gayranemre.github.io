@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Emre Gayran Portfolyo</title>
+<meta name="description" content="Görüntü yönetmeni ve videographer Emre Gayran'ın portfolyosu: ürün çekimi, marka filmleri, sosyal medya ve grafik tasarım.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Emre Gayran · Görüntü Yönetmeni & Videographer">
+<meta property="og:description" content="Görüntü yönetmeni ve videographer Emre Gayran'ın portfolyosu: ürün çekimi, marka filmleri, sosyal medya ve grafik tasarım.">
+<meta property="og:image" content="https://gayranemre.github.io/thumb.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23161617'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%23f3f3f1' text-anchor='middle'%3EEG%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+
+/* Layout: açık gri-beyaz galeri. Tek sütun anlatı, işler ızgara halinde; her video bir "klip" gibi süre ve oranla etiketlenir. */
+:root{
+  --bg:#f3f3f1; --surface:#e4e4e1; --line:#d4d4d0; --fg:#161617; --fg2:#3c3c40; --muted:#76767b; --accent:#2a2a2d; --rec:#d93a2f;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:20px;align-items:center;padding-block:12px;overflow-x:auto;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav .me{font-family:var(--display);font-weight:700;font-stretch:90%;letter-spacing:.01em;white-space:nowrap;margin-right:auto;padding-right:12px}
+nav a.l{font-size:13px;color:var(--muted);text-decoration:none;white-space:nowrap}
+nav a.l:hover{color:var(--fg)}
+
+/* hero */
+.hero{padding-block:72px 56px}
+.rec{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--muted);display:flex;align-items:center;gap:8px;text-transform:uppercase}
+.rec i{width:8px;height:8px;border-radius:50%;background:var(--rec);display:inline-block;animation:blink 1.6s steps(1) infinite}
+@keyframes blink{50%{opacity:.25}}
+h1{font-family:var(--display);font-weight:800;font-stretch:68%;font-size:clamp(64px,13vw,168px);line-height:.88;letter-spacing:-.01em;margin:18px 0 0;text-transform:uppercase}
+.role{font-family:var(--display);font-stretch:110%;font-weight:500;font-size:clamp(18px,2.4vw,26px);margin:14px 0 0;color:var(--accent)}
+.lede{max-width:60ch;color:var(--fg2);font-size:18px;margin:22px 0 0}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:44px}
+.stat{background:var(--bg);padding:20px 20px 18px;min-width:0}
+.stat b{display:block;font-family:var(--display);font-stretch:75%;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1;font-variant-numeric:tabular-nums}
+.stat span{display:block;color:var(--muted);font-size:13px;margin-top:8px;line-height:1.4}
+
+/* sections */
+section{padding-block:64px;border-top:1px solid var(--line)}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+h2{font-family:var(--display);font-weight:700;font-stretch:80%;font-size:clamp(32px,5vw,52px);line-height:1;margin:0;text-transform:uppercase;text-wrap:balance}
+.sh p{margin:0;color:var(--muted);max-width:46ch;font-size:15px}
+.k{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+
+/* featured */
+.feat{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:48px;align-items:center}
+.feat h3{font-family:var(--display);font-stretch:85%;font-weight:700;font-size:clamp(28px,4vw,44px);line-height:1.02;margin:10px 0 0;text-wrap:balance}
+.big{font-family:var(--display);font-stretch:70%;font-weight:800;font-size:clamp(72px,11vw,132px);line-height:.9;color:var(--accent);margin:26px 0 4px;font-variant-numeric:tabular-nums}
+.feat p{color:var(--fg2);max-width:52ch}
+.feat ul{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.feat li{display:grid;grid-template-columns:120px 1fr;gap:12px;font-size:14.5px;border-top:1px solid var(--line);padding-top:10px}
+.feat li .k{padding-top:2px}
+.btn{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-size:14px;font-weight:500;padding:10px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none}
+.btn:hover{border-color:var(--fg)}
+
+/* clips */
+.clips{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.clips.wide{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+.clip{all:unset;cursor:pointer;display:block;min-width:0}
+.clip .fr{position:relative;overflow:hidden;background:var(--surface);aspect-ratio:9/16;max-width:100%}
+.clip.h .fr{aspect-ratio:16/9}
+.clip img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease,opacity .3s}
+.clip:hover img{transform:scale(1.035)}
+.clip .tc{position:absolute;left:10px;top:10px;font-family:var(--mono);font-size:11px;background:rgba(0,0,0,.62);padding:3px 7px;border-radius:3px;color:#fff}
+.clip .pl{position:absolute;right:10px;bottom:10px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;transition:transform .2s}
+.clip .pl::after{content:"";border-left:13px solid #111;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:4px}
+.clip:hover .pl,.clip:focus-visible .pl{transform:scale(1.08)}
+.clip .t{font-weight:600;font-size:15px;margin-top:12px;line-height:1.3}
+.clip .s{color:var(--muted);font-size:13.5px;margin-top:3px;line-height:1.4}
+.feat .clip .fr{border-radius:2px}
+
+.sub{margin:40px 0 16px;display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.sub h3{font-family:var(--display);font-stretch:95%;font-weight:600;font-size:21px;margin:0}
+
+/* photos */
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.photos button{all:unset;cursor:zoom-in;display:block;aspect-ratio:2/3;overflow:hidden;background:var(--surface)}
+.photos img{width:100%;height:100%;object-fit:cover;transform:scale(1.03);transition:transform .5s}
+.photos button:hover img{transform:scale(1.08)}
+
+/* results */
+.res{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:34px}
+.res div{background:var(--bg);padding:18px;min-width:0}
+.res b{display:block;font-family:var(--display);font-stretch:75%;font-weight:700;font-size:34px;line-height:1;color:var(--accent)}
+.res span{display:block;font-size:13px;color:var(--muted);margin-top:8px;line-height:1.4}
+
+/* carousels */
+.strip{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-color:var(--line) transparent}
+.strip button{all:unset;cursor:zoom-in;flex:0 0 auto;scroll-snap-align:start;height:clamp(260px,42vw,400px)}
+.strip img{height:100%;width:auto;display:block;max-width:none}
+
+/* kit */
+.kit{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.kit h4{margin:0 0 10px;font-size:13px}
+.kit ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:15px;color:var(--fg2)}
+.cases{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.cases article{background:var(--bg);padding:20px;min-width:0;display:flex;flex-direction:column}
+.cases h4{margin:6px 0 0;font-size:16px;font-weight:600}
+.cases b{display:block;font-family:var(--display);font-stretch:75%;font-weight:700;font-size:40px;line-height:1;margin:18px 0 10px;font-variant-numeric:tabular-nums}
+.cases p{margin:0;font-size:13.5px;color:var(--fg2);line-height:1.45}
+@media (max-width:820px){.cases{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.cases{grid-template-columns:1fr}}
+.ideas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.ideas article{background:var(--bg);padding:22px 22px 24px;min-width:0}
+.ideas h3{font-family:var(--display);font-stretch:90%;font-weight:700;font-size:22px;line-height:1.1;margin:10px 0 8px}
+.ideas p{margin:0;color:var(--fg2);font-size:14.5px}
+.contact{display:flex;flex-wrap:wrap;gap:16px 48px;margin-top:28px}
+.contact div{display:grid;gap:4px}
+.contact a{font-family:var(--display);font-stretch:85%;font-weight:600;font-size:clamp(22px,3vw,30px);text-decoration:none;user-select:all}
+.contact a:hover{text-decoration:underline}
+@media (max-width:820px){.ideas{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--line);padding-block:48px 64px}
+footer .n{font-family:var(--display);font-stretch:70%;font-weight:800;font-size:clamp(40px,7vw,80px);text-transform:uppercase;line-height:.95}
+footer p{color:var(--muted);margin:14px 0 0;max-width:60ch}
+
+/* modal */
+dialog{border:0;padding:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;color:var(--fg)}
+dialog::backdrop{background:rgba(0,0,0,.92)}
+.mv{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:max(56px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(24px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.mv video,.mv img{max-width:100%;max-height:calc(100% - 50px);background:#000;display:block}
+.mv .cap{font-size:14px;color:#a5a5aa;text-align:center}
+.mv .cap b{color:#fff;font-weight:600}
+.hg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,400px);gap:48px;align-items:end}
+.portrait{margin:0;aspect-ratio:1/1;max-width:100%;overflow:hidden;background:#fff}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1)}
+@media (max-width:820px){.hg{grid-template-columns:1fr;gap:28px}.portrait{max-width:360px}}
+.x{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);right:max(14px,env(safe-area-inset-right,0px));width:40px;height:40px;border-radius:50%;border:1px solid #444;background:#111;color:#fff;font-size:20px;cursor:pointer}
+
+@media (max-width:820px){
+  .feat{grid-template-columns:1fr;gap:28px}
+  .feat>.clip{max-width:320px}
+  .res{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kit{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .stats{grid-template-columns:1fr}
+  .clips{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .clips.wide{grid-template-columns:1fr}
+  .photos{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .feat li{grid-template-columns:1fr;gap:2px}
+  .hero{padding-block:48px 40px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+
+<nav><div class="wrap">
+  <span class="me">Emre Gayran</span>
+  <a class="l" href="#urun">Ürün</a>
+  <a class="l" href="#film">Marka filmleri</a>
+  <a class="l" href="#sosyal">Sosyal medya</a>
+  <a class="l" href="#tasarim">Grafik tasarım</a>
+  <a class="l" href="#fikirler">Size özel</a>
+  <a class="l" href="#iletisim">İletişim</a>
+</div></nav>
+
+<header class="wrap hero">
+  <div class="hg">
+  <div>
+  <div class="rec"><i></i>Portfolyo · 2026</div>
+  <h1>Emre<br>Gayran</h1>
+  <p class="role">Görüntü Yönetmeni &amp; Videographer</p>
+  <p class="lede">Çekim, kurgu, renk ve tasarımı tek elden yürütüyorum. Ürün çekimi, marka filmi, sosyal medya içeriği ve AI destekli üretim yapıyorum. Bir içeriği güzel göstermekle yetinmiyorum, izlenmesini ve satış getirmesini de hedefliyorum.</p>
+  </div>
+  <figure class="portrait"><img src="img/emre.jpg" alt="Emre Gayran portresi"></figure>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>1,5 milyon</b><span>AirPods Pro 3 içeriğinin aldığı etkileşim</span></div>
+    <div class="stat"><b>56,6 milyon</b><span>Evrim Akın için 10 ayda Instagram Reels izlenmesi</span></div>
+    <div class="stat"><b>86,8 milyon</b><span>Evrim Akın YouTube kanalının toplam görüntülenmesi</span></div>
+  </div>
+</header>
+
+<section id="one-cikan"><div class="wrap">
+  <div class="feat">
+    <div id="featClip"></div>
+    <div>
+      <span class="k">Öne çıkan · Teknoloji içeriği</span>
+      <h3>AirPods Pro 3 kalbini duymuyor, kanını izliyor.</h3>
+      <div class="big">1,5M</div>
+      <span class="k">etkileşim</span>
+      <p style="margin-top:20px">Gündemdeki bir ürünü, kulaklığın içindeki nabız sensörünün nasıl çalıştığını anlatan kısa bir açıklayıcı içeriğe çevirdim. Planlı bir kampanyanın parçası değildi, spontane üretildi ve 1,5 milyon etkileşime ulaştı. Teknik bir özelliği herkesin anlayacağı bir hikâyeye dönüştürmek, Apple ürünleri için üreteceğim içeriğin de temeli.</p>
+      <ul>
+        <li><span class="k">Rolüm</span><span>Fikir, Türkçe anlatım ve metin, kurgu, ekran yazıları, ses</span></li>
+        <li><span class="k">Format</span><span>Dikey Reels, 9:16, 1:22</span></li>
+        <li><span class="k">Yaklaşım</span><span>İlk saniyede iddia, sonra animasyonla açıklama</span></li>
+      </ul>
+      <a class="btn" href="https://www.instagram.com/reel/DfauGELChWT/" target="_blank" rel="noopener">Instagram'da aç ↗</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="urun"><div class="wrap">
+  <div class="sh"><h2>Ürün fotoğrafçılığı</h2><p>Işık, yansıma ve doku kontrolü. Cam şişe, sıvı ve parlak yüzey çekmek, bir iPhone'u ya da MacBook'u çekmenin aynı zanaati.</p></div>
+  <div class="photos" id="photos"></div>
+</div></section>
+
+<section id="film"><div class="wrap">
+  <div class="sh"><h2>Marka ve tanıtım filmleri</h2><p>Kurumsal tanıtım, fuar, etkinlik ve sinematik kısa filmler.</p></div>
+  <div class="clips wide" id="g-film"></div>
+  <div class="sub"><h3>Gayrimenkul · Symbol V Office</h3><span class="k">Kavanlar Yapı</span></div>
+  <div class="clips" id="g-emlak"></div>
+  <div class="sub"><h3>Otomotiv</h3><span class="k">Ford · Volkswagen · Renault · Mus-Car</span></div>
+  <div class="clips" id="g-oto"></div>
+  <div class="sub"><h3>AI destekli üretim</h3><span class="k">Konsept ve hızlı prototip</span></div>
+  <div class="clips" id="g-ai"></div>
+</div></section>
+
+<section id="sosyal"><div class="wrap">
+  <div class="sh"><h2>Sosyal medya ve YouTube</h2><p>Podcast kesitleri, uzman anlatımlı Reels ve kanal yönetimi. Burada ölçtüğüm şey izlenme ve sonuç.</p></div>
+  <div class="clips" id="g-sosyal"></div>
+  <div class="sub"><h3>Sonuçlar</h3><span class="k">İçerik üretimi ve reklam yönetimi birlikte</span></div>
+  <div class="cases">
+    <article><span class="k">YouTube ve Instagram</span><h4>Evrim Akın</h4><b>56,6M</b><p>10 ayda Instagram Reels izlenmesi. YouTube kanalında toplam 86,8 milyon görüntülenme ve 177 bin abone.</p></article>
+    <article><span class="k">Saç ekimi kliniği</span><h4>Dr. Este &amp; Icon Hair</h4><b>1 ₺ → 11 ₺</b><p>Reklamdan gelen 60 hasta ve yaklaşık 4,5 milyon ₺ ciro. Reklama harcanan her lira yaklaşık 11 lira ciro getirdi.</p></article>
+    <article><span class="k">Doktor hesabı</span><h4>Dr. Serdar</h4><b>11,7×</b><p>İçerik ve reklamı birlikte üstlendikten sonra video başına izlenme 11,7 kat arttı. Reklamdan 3.703 mesaj geldi.</p></article>
+    <article><span class="k">Diyetisyen</span><h4>Dyt. Neslihan Dülger</h4><b>%20,4</b><p>4 ayda takipçi artışı. Son 90 günde 637 bin görüntülenme.</p></article>
+  </div>
+</div></section>
+
+<section id="tasarim"><div class="wrap">
+  <div class="sh"><h2>Grafik tasarım</h2><p>Carousel, kampanya görseli ve veri anlatımı. Uluslararası bir markanın kimlik kurallarına sadık kalarak da, sıfırdan bir dil kurarak da çalışıyorum. Yana kaydırarak serilerin tamamını görebilirsiniz.</p></div>
+  <div class="sub"><h3>Kurumsal kimlik · BSBI in Numbers</h3><span class="k">Berlin School of Business and Innovation · 13 kare</span></div>
+  <div class="strip" data-set="bsbi_numbers" data-n="13"></div>
+  <div class="sub"><h3>Şehir serileri · Study in Berlin, Study in Hamburg</h3><span class="k">BSBI · 10 kare</span></div>
+  <div class="strip" data-set="bsbi_berlin,bsbi_hamburg" data-n="5,5"></div>
+  <div class="sub"><h3>Veri carousel'i · Evrim Akın</h3><span class="k">8 kare</span></div>
+  <div class="strip" data-set="coursel2" data-n="8"></div>
+  <div class="sub"><h3>Editoryal seri · Bilim kurgu dizi önerileri</h3><span class="k">11 kare</span></div>
+  <div class="strip" data-set="coursel" data-n="11"></div>
+  <div class="sub"><h3>Kampanya görselleri · Symbol V Office ve Boulevard</h3><span class="k">6 kare</span></div>
+  <div class="strip" data-set="coursel5,coursel4" data-n="4,2"></div>
+  <div class="sub"><h3>Bilgilendirici seri · Cilt bakımı</h3><span class="k">5 kare</span></div>
+  <div class="strip" data-set="coursel3" data-n="5"></div>
+</div></section>
+
+<section id="fikirler"><div class="wrap">
+  <div class="sh"><h2>Apple Gürgençler ve Yenilio için</h2><p>İlk aylarda üretmeyi planladığım içerikler. Çoğu mağazalarda ve mevcut ekiple, büyük bir prodüksiyon kurmadan çekilebilir.</p></div>
+  <div class="ideas">
+    <article><span class="k">Yenilio</span><h3>"Yeni gibi" detay serisi</h3><p>Yenilenmiş cihazı makro çekimle gösteren kısa videolar: kasa, ekran, batarya sağlığı ve test adımları. Yenilenmiş ürüne duyulan güvensizliği görüntüyle çözmek.</p></article>
+    <article><span class="k">Yenilio</span><h3>Onarım masasından</h3><p>Teknisyenlerin test ve onarım sürecini gösteren perde arkası içerikleri. TSE garantili onarımın nasıl yapıldığını göstermek, satıştaki en güçlü kanıt olur.</p></article>
+    <article><span class="k">Apple Gürgençler</span><h3>Lansman günü içerikleri</h3><p>Yeni bir ürün çıktığında aynı gün yayına giren özellik anlatımları. AirPods videosundaki formatın markalı ve mağazaya yönlendiren hâli.</p></article>
+    <article><span class="k">Apple Gürgençler</span><h3>Trade-in anlatımı</h3><p>Eski cihazını getiren müşterinin süreci baştan sona deneyimlediği kısa Reels serisi. Takas programını herkesin anlayacağı bir hikâyeye çevirmek.</p></article>
+    <article><span class="k">Mağazalar</span><h3>Açılış ve etkinlik çekimleri</h3><p>11 ildeki mağaza açılışları ve etkinlikler için dikey ve yatay çekim, aynı gün yayına hazır kurgu.</p></article>
+    <article><span class="k">İşveren markası</span><h3>Ekibin yüzleri</h3><p>Mağaza ve servis çalışanlarını anlatan kısa portre serisi. Hem müşteriye güven verir hem de işe alımda şirketi anlatır.</p></article>
+  </div>
+</div></section>
+
+<section id="ekipman"><div class="wrap">
+  <div class="sh"><h2>Ekipman ve araçlar</h2></div>
+  <div class="kit">
+    <div><h4 class="k">Kamera ve optik</h4><ul><li>Sony FX3</li><li>Sony A7S serisi</li><li>Sony A7R IV</li><li>Fujifilm X-H2S</li><li>Sirui anamorfik lensler</li><li>DJI drone ve gimbal</li></ul></div>
+    <div><h4 class="k">Post prodüksiyon</h4><ul><li>Adobe Premiere Pro</li><li>Adobe After Effects</li><li>Adobe Media Encoder</li><li>Renk düzenleme ve ses miksajı</li><li>Canva</li></ul></div>
+    <div><h4 class="k">AI üretim</h4><ul><li>Veo</li><li>Higgsfield</li><li>InVideo</li><li>HeyGen</li><li>ElevenLabs</li><li>Claude, ChatGPT, Gemini</li></ul></div>
+  </div>
+</div></section>
+
+<footer id="iletisim"><div class="wrap">
+  <div class="n">Emre Gayran</div>
+  <p>Görüntü Yönetmeni &amp; Videographer</p>
+  <div class="contact">
+    <div><span class="k">Telefon</span><a href="tel:+905304159076">+90 530 415 90 76</a></div>
+    <div><span class="k">E-posta</span><a href="mailto:gayranemre@gmail.com">gayranemre@gmail.com</a></div>
+  </div>
+</div></footer>
+
+<dialog id="dlg" aria-label="Oynatıcı">
+  <button class="x" id="dx" aria-label="Kapat">×</button>
+  <div class="mv" id="mv"></div>
+</dialog>
+
+<script>
+const V={
+ airpods:["AirPods Pro 3","Teknoloji açıklayıcı · 1,5M etkileşim",81.9,0],
+ voltify:["Voltify & Filo Broker","Kurumsal tanıtım filmi · 4K",105.4,1],
+ yolbulancolor:["Yolbulan Metal","Endüstriyel tanıtım filmi · renk düzenleme",45.2,1],
+ odeabank:["Odeabank · Show Must Go On","Etkinlik filmi",116.8,1],
+ torima2:["Torima","Ürün ve teknik servis filmi · 4K",46.3,1],
+ torima:["Torima","Sinematik marka filmi",37.3,1],
+ thy2:["Türk Hava Yolları","Sinematik kısa film",65.5,1],
+ torima3:["Torima · Fuar","Fuar standı içeriği",52,0],
+ pureblack:["Pure Black Coffee","Ürün ve marka filmi",32.9,0],
+ thy3:["Türk Hava Yolları","Şehir ve havadan çekim",48.2,0],
+ thy1:["Türk Hava Yolları","Gastronomi içeriği",49.2,0],
+ kavanlar:["Kavanlar Yapı","Saha röportajı",42.8,0],
+ symbol3:["Symbol V Office","Proje tanıtımı",29.9,1],
+ symbol2:["Symbol V Office","Sinematik tanıtım",16.3,0],
+ symbol8:["Symbol V Office","Satış içeriği",27.6,0],
+ uretkenlik:["Symbol V Office","Ofis yaşamı · detay çekim",10.5,0],
+ raptor:["Ford Ranger Raptor","Fujifilm X-T4 · kurgu ve renk",36.9,1],
+ duster:["Renault Duster","Kurgu timeline'ı ile birlikte",57.6,0],
+ amarok1:["VW Amarok V6","Ekipman tanıtımı",14.1,0],
+ amarok2:["VW Amarok","Ürün detay ve montaj",42,0],
+ muscar:["Mus-Car","Araç dönüşüm içeriği",12.8,0],
+ air:["AI konsept reklam","Ürün konsepti · InVideo",33.9,0],
+ ai:["AI kısa film","Sinematik AI üretim · InVideo",73.4,1],
+ tugba:["Evrim Akın · Pijama Sohbetleri","Podcast kesiti · Tuğba Özerk",34.5,0],
+ metin:["Evrim Akın · Pijama Sohbetleri","Podcast kesiti",35.4,0],
+ sac:["Evrim Akın · Pijama Sohbetleri","Podcast kesiti",22.9,0],
+ hocam:["Doktor hesabı","Uzman anlatımlı Reels",57.6,0],
+ bitter:["Diyetisyen hesabı","Bilgilendirici Reels",68.9,0]
+};
+const G={"g-film":["voltify","yolbulancolor","odeabank","torima2","torima","thy2"],"g-film-v":["torima3","pureblack","thy3","thy1"],
+ "g-emlak":["kavanlar","symbol3","symbol2","symbol8","uretkenlik"],"g-oto":["raptor","duster","amarok1","amarok2","muscar"],
+ "g-ai":["air","ai"],"g-sosyal":["tugba","metin","sac","hocam","bitter"]};
+const tc=s=>{s=Math.round(s);return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")};
+function clip(id){const [t,s,d,h]=V[id];const b=document.createElement("button");b.className="clip"+(h?" h":"");b.type="button";b.dataset.v=id;
+ b.setAttribute("aria-label",t+" videosunu oynat");
+ b.innerHTML=`<div class="fr"><img src="t/${id}.jpg" alt="" loading="lazy"><span class="tc">${tc(d)} · ${h?"16:9":"9:16"}</span><span class="pl"></span></div><div class="t">${t}</div><div class="s">${s}</div>`;return b}
+document.getElementById("featClip").appendChild(clip("airpods"));
+for(const [k,ids] of Object.entries(G)){
+ let el=document.getElementById(k);
+ if(k==="g-film-v"){el=document.createElement("div");el.className="clips";el.style.marginTop="18px";document.getElementById("g-film").after(el)}
+ ids.forEach(i=>el.appendChild(clip(i)))}
+const ph=document.getElementById("photos");
+for(let i=1;i<=24;i++){const n=String(i).padStart(2,"0");const b=document.createElement("button");b.type="button";b.dataset.img=`img/p${n}.jpg`;b.setAttribute("aria-label","Ürün fotoğrafı "+i+", büyüt");b.innerHTML=`<img src="img/p${n}.jpg" alt="Ürün fotoğrafı ${i}" loading="lazy">`;ph.appendChild(b)}
+document.querySelectorAll(".strip").forEach(st=>{const sets=st.dataset.set.split(","),ns=st.dataset.n.split(",");
+ sets.forEach((s,j)=>{for(let i=1;i<=+ns[j];i++){const src=`img/${s}_${i}.jpg`;const b=document.createElement("button");b.type="button";b.dataset.img=src;b.setAttribute("aria-label","Tasarım görseli, büyüt");b.innerHTML=`<img src="${src}" alt="" loading="lazy">`;st.appendChild(b)}})});
+const dlg=document.getElementById("dlg"),mv=document.getElementById("mv");
+function close(){mv.innerHTML="";dlg.close()}
+document.getElementById("dx").onclick=close;
+dlg.addEventListener("click",e=>{if(e.target===dlg||e.target===mv)close()});
+dlg.addEventListener("cancel",e=>{e.preventDefault();close()});
+document.addEventListener("click",e=>{
+ const c=e.target.closest(".clip");if(c){const [t,s]=V[c.dataset.v];
+  mv.innerHTML=`<video src="v/${c.dataset.v}.mp4" poster="t/${c.dataset.v}.jpg" controls playsinline autoplay preload="auto"></video><div class="cap"><b>${t}</b> · ${s}</div>`;dlg.showModal();
+  const vid=mv.querySelector("video");vid.play().catch(()=>{});return}
+ const p=e.target.closest("[data-img]");if(p){mv.innerHTML=`<img src="${p.dataset.img}" alt="">`;dlg.showModal()}
+});
+</script>
+
+</body>
+</html>
